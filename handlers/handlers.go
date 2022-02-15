@@ -20,8 +20,6 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func TestingHandler(w http.ResponseWriter, r *http.Request) {
-	var whreq cx.WebhookRequest
 	var whresp cx.WebhookResponse
-	whreq.FromRequest(r)
 	whresp.TextResponse(w, "It works, Jim!")
 }
